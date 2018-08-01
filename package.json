@@ -1,0 +1,43 @@
+{
+  "name": "react-backend",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "NODE_ENV=production node index.js",
+    "start:dev": "NODE_ENV=development nodemon index.js",
+    "start:inspect": "NODE_ENV=development nodemon --inspect index.js",
+    "start:historical": "NODE_ENV=historical nodemon index.js",
+    "start:client": "NODE_ENV=development react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "body-parser": "~1.18.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.15.5",
+    "express-force-ssl": "^0.3.2",
+    "firebase-admin": "^5.6.0",
+    "gdax": "^0.4.2",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.0",
+    "node-fetch": "^1.7.3",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.0.17",
+    "recharts": "^1.0.0-beta.6",
+    "serve-favicon": "~2.4.5",
+    "socket.io": "^2.0.4",
+    "socket.io-client": "^2.0.4",
+    "twilio": "^3.11.0"
+  },
+  "proxy": "http://localhost:8000",
+  "nodemonConfig": {
+    "ignore": [
+      "src/*",
+      "node_modules/*"
+    ]
+  }
+}
